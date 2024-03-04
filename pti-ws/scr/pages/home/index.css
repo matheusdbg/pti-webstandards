@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  background-color: #fff;
+  /* -webkit-text-stroke: 0.25px #333; */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  height: 5rem;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: block;
+  margin: 0 1ch;
+}
+
+nav ul li a {
+  padding: 1rem 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabeça {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  width: 90%;
+  background-image: url('/public/assets/images/calisemfundo.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.titulo {
+  font-family: 'lucida calligraphy';
+  font-size: 4rem;
+  display: flex;
+  color: #020202;
+}
+
+section {
+  padding-top: 3rem;
+  padding: 3rem 1rem 0 0;
+  /* max-width: 900px; */
+  width: auto;
+  margin: 0 auto;
+}
+
+section > h2 {
+  margin-top: 5rem;
+  font-family: 'lucida calligraphy';
+  font-size: 3rem;
+  /* margin-bottom: 4rem; */
+  line-height: 5rem;
+}
+
+section > h3 {
+  font-size: 2rem;
+  margin: 0;
+  margin-top: -4rem;
+  line-height: 5rem;
+}
+
+section p {
+  margin: 2rem auto 1rem;
+  max-width: 55ch;
+  font-size: 1.5rem;
+  font-family: 'comic sans ms';
+}
+
+section p > p {
+  margin: 0;
+}
+
+.trabalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trabalho-vantagem p {
+  font-family: 'lucida calligraphy';
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+.lista {
+  font-size: 1.5rem;
+  font-family: 'comic sans ms';
+  text-align: left;
+}
+
+.lista ul {
+  list-style-type: lower-greek;
+}
+
+.serviços {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.serviços .serviço {
+  background-color: #c7c4c4;
+  border: 1px solid #333;
+  min-width: 30%;
+  max-width: fit-content;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  min-height: 100px;
+}
+
+.serviços .serviço > h3 {
+  font-family: 'lucida calligraphy';
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  text-wrap: wrap;
+}
+
+/* .serviços .serviço > p {
+  width: 100%;
+  margin: 1rem auto;
+} */
+
+/* .serviço > h3 {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+} */
+
+/* .serviços .serviço > .serviço span {
+  font-size: 1.2rem;
+  line-height: 0.75rem;
+  font-weight: normal;
+} */
+
+.contato-fundo {
+  background-color: #c7c4c4;
+  border: 1px solid #333;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  min-height: 100%;
+}
+
+.contato-fundo h2 {
+  background-color: #c7c4c4;
+  font-family: 'lucida calligraphy';
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: block;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+form input {
+  margin-top: 0.2rem;
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.75rem;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+form input[type='submit'] {
+  margin: 1rem auto;
+  width: 6rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 2px black;
+} /*# sourceMappingURL=style.css.map */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
